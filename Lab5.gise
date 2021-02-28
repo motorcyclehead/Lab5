@@ -27,10 +27,17 @@
     <file xil_pn:fileType="FILE_XST" xil_pn:name="Controller.xst"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="FSM_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="FSM_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="FSM_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="FSM_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="FSM_tb_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="FSM_testbench_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="FSM_testbench_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="FSM_testbench_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
@@ -40,18 +47,18 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1614534676" xil_pn:in_ck="2299607776229142587" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1614534676">
+    <transform xil_pn:end_ts="1614536760" xil_pn:in_ck="-700637474572739759" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1614536760">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Controller.v"/>
       <outfile xil_pn:name="FSM.v"/>
-      <outfile xil_pn:name="FSM_testbench.v"/>
+      <outfile xil_pn:name="FSM_tb.v"/>
     </transform>
-    <transform xil_pn:end_ts="1614534354" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="5022607841245443388" xil_pn:start_ts="1614534354">
+    <transform xil_pn:end_ts="1614536760" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-3839974866869368366" xil_pn:start_ts="1614536760">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1614534354" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="2277685234862114042" xil_pn:start_ts="1614534354">
+    <transform xil_pn:end_ts="1614536760" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="1398948351289476496" xil_pn:start_ts="1614536760">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -59,24 +66,31 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1614534676" xil_pn:in_ck="2299607776229142587" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1614534676">
+    <transform xil_pn:end_ts="1614536760" xil_pn:in_ck="-700637474572739759" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1614536760">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Controller.v"/>
       <outfile xil_pn:name="FSM.v"/>
-      <outfile xil_pn:name="FSM_testbench.v"/>
+      <outfile xil_pn:name="FSM_tb.v"/>
     </transform>
-    <transform xil_pn:end_ts="1614534678" xil_pn:in_ck="2299607776229142587" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="2181928071956442039" xil_pn:start_ts="1614534676">
-      <status xil_pn:value="FailedRun"/>
+    <transform xil_pn:end_ts="1614536763" xil_pn:in_ck="-700637474572739759" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-643777100959673917" xil_pn:start_ts="1614536760">
+      <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="FSM_tb_beh.prj"/>
+      <outfile xil_pn:name="FSM_tb_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1614534573" xil_pn:in_ck="-7517073715966100439" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="401286244515566138" xil_pn:start_ts="1614534572">
-      <status xil_pn:value="AbortedRun"/>
+    <transform xil_pn:end_ts="1614537058" xil_pn:in_ck="-7223370968178454817" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="8248725721233749222" xil_pn:start_ts="1614537057">
+      <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForced"/>
-      <outfile xil_pn:name="FSM_testbench_isim_beh.wdb"/>
+      <outfile xil_pn:name="FSM_tb_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
     </transform>
   </transforms>
 

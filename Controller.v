@@ -33,12 +33,10 @@ input [3:0] x_i, y_i;
 input x_neq_y, x_lt_y, go_i;
 input CLK;
 
-output [3:0] d_o;
+output reg d_o;
 output x_ld, y_ld, x_sel, y_sel;
 
 reg [3:0] state = state_1;
-
-reg [3:0] d_o;
 
 reg x_ld, y_ld, x_sel, y_sel;
 

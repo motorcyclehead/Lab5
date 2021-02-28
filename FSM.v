@@ -20,14 +20,13 @@
 //////////////////////////////////////////////////////////////////////////////////
 module FSM(x_i, y_i, go_i, reset, d_o, CLK);
  
-input [3:0] x_i, y_i;
+input [3:0] x_i, y_i; 
 input reset, go_i, CLK;
 
 output [3:0] d_o;
 
-wire ctrl_x_reg, ctrl_y_reg, ctrl_d_reg, ctrl_x_in, ctrl_y_in, 
-				x_in_x_reg, y_in_y_reg, neq_ctrl, lt_ctrl;
-wire [3:0] subt1_x_in, subt2_y_in, x_reg_d_reg, x_o, y_o;
+wire ctrl_x_reg, ctrl_y_reg, ctrl_d_reg, ctrl_x_in, ctrl_y_in, neq_ctrl, lt_ctrl;
+wire [3:0] subt1_x_in, subt2_y_in, x_reg_d_reg, x_o, y_o, x_in_x_reg, y_in_y_reg;
 
 	Controller controller(
 		.CLK(CLK),
@@ -39,7 +38,7 @@ wire [3:0] subt1_x_in, subt2_y_in, x_reg_d_reg, x_o, y_o;
 		.y_ld(ctrl_t_reg),
 		.x_sel(ctrl_x_in),
 		.y_sel(ctrl_y_in),
-		.d_o(d_o),
+		.d_o(ctrl_d_reg),
 		.go_i(go_i)
 		);
 	
@@ -48,7 +47,7 @@ wire [3:0] subt1_x_in, subt2_y_in, x_reg_d_reg, x_o, y_o;
 		.d(x_in_x_reg),
 		.enable(ctrl_x_in),
 		.reset(reset),
-		.q(x_0)
+		.q(x_o)
 		);
 	
 	dff y_reg(
@@ -56,7 +55,7 @@ wire [3:0] subt1_x_in, subt2_y_in, x_reg_d_reg, x_o, y_o;
 		.d(y_in_y_reg),
 		.enable(ctrl_y_in),
 		.reset(reset),
-		.q(y_0)
+		.q(y_o)
 	);
 	
 	dff d_reg(
@@ -64,7 +63,7 @@ wire [3:0] subt1_x_in, subt2_y_in, x_reg_d_reg, x_o, y_o;
 		.d(x_o),
 		.enable(ctrl_d_reg),
 		.reset(reset),
-		.q(d_0)
+		.q(d_o)
 	);
 	
 	mux_21_beh x_in(
