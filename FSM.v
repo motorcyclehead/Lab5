@@ -150,7 +150,7 @@ module less_than (x, y, x_lt_y);
 	
 endmodule
 
-module mux_21_beh(mux_in, sel, mux_out);
+module mux_21_beh(mux_in0, mux_in1, sel, mux_out);
 
 input sel;
 input [3:0] mux_in0, mux_in1;

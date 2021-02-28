@@ -1,0 +1,18 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/Users/toro0/Spring 2021/CDA 4203/Xilinx files/Lab5/FSM_isim_beh.exe -prj D:/Users/toro0/Spring 2021/CDA 4203/Xilinx files/Lab5/FSM_beh.prj work.FSM work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/Users/toro0/Spring 2021/CDA 4203/Xilinx files/Lab5/Controller.v" into library work
+Analyzing Verilog file "D:/Users/toro0/Spring 2021/CDA 4203/Xilinx files/Lab5/FSM.v" into library work
+ERROR:HDLCompiler:69 - "D:/Users/toro0/Spring 2021/CDA 4203/Xilinx files/Lab5/FSM.v" Line 21: <go_i> is not declared.
+ERROR:HDLCompiler:53 - "D:/Users/toro0/Spring 2021/CDA 4203/Xilinx files/Lab5/FSM.v" Line 21: <CLK> is not a port.
+ERROR:HDLCompiler:598 - "D:/Users/toro0/Spring 2021/CDA 4203/Xilinx files/Lab5/FSM.v" Line 21: Module <FSM> ignored due to previous errors.
+ERROR:HDLCompiler:598 - "D:/Users/toro0/Spring 2021/CDA 4203/Xilinx files/Lab5/FSM.v" Line 111: Module <dff> ignored due to previous errors.
+ERROR:HDLCompiler:598 - "D:/Users/toro0/Spring 2021/CDA 4203/Xilinx files/Lab5/FSM.v" Line 133: Module <NEQ> ignored due to previous errors.
+ERROR:HDLCompiler:598 - "D:/Users/toro0/Spring 2021/CDA 4203/Xilinx files/Lab5/FSM.v" Line 143: Module <less_than> ignored due to previous errors.
+WARNING:HDLCompiler:98 - "D:/Users/toro0/Spring 2021/CDA 4203/Xilinx files/Lab5/FSM.v" Line 159: mux_out was previously declared with a range
+ERROR:HDLCompiler:69 - "D:/Users/toro0/Spring 2021/CDA 4203/Xilinx files/Lab5/FSM.v" Line 161: <mux_in> is not declared.
+ERROR:HDLCompiler:598 - "D:/Users/toro0/Spring 2021/CDA 4203/Xilinx files/Lab5/FSM.v" Line 153: Module <mux_21_beh> ignored due to previous errors.
+ERROR:HDLCompiler:598 - "D:/Users/toro0/Spring 2021/CDA 4203/Xilinx files/Lab5/FSM.v" Line 172: Module <Subt> ignored due to previous errors.
+Verilog file D:/Users/toro0/Spring 2021/CDA 4203/Xilinx files/Lab5/FSM.v ignored due to errors

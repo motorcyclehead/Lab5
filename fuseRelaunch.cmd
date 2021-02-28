@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/Users/toro0/Spring 2021/CDA 4203/Xilinx files/Lab5/FSM_isim_beh.exe" -prj "D:/Users/toro0/Spring 2021/CDA 4203/Xilinx files/Lab5/FSM_beh.prj" "work.FSM" "work.glbl" 

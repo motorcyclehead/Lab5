@@ -18,7 +18,7 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module Controller(x_i, y_i, go_i, x_ld, x_sel, y_ld, y_sel, x_neq_y, x_lt_y, d_o, CLK);
+module Controller(x_i, y_i, go_i, x_ld, x_sel, y_ld, y_sel, d_o, x_neq_y, x_lt_y, d_o, CLK);
 
 localparam
 	state_1 = 4'b0000,
@@ -30,7 +30,7 @@ localparam
 	state_7 = 4'b0110;
 
 input [3:0] x_i, y_i;
-input x_neq_y, x_lt_y;
+input x_neq_y, x_lt_y, go_i;
 input CLK;
 
 output [3:0] d_o;
@@ -39,7 +39,9 @@ output x_ld, y_ld, x_sel, y_sel;
 //reg [3:0] x, y;
 reg [3:0] state = state_1;
 
-wire x_ld, y_ld, x_sel, y_sel;
+reg [3:0] d_o;
+
+reg x_ld, y_ld, x_sel, y_sel;
 
 always @(negedge CLK)
 
@@ -83,7 +85,7 @@ always @(negedge CLK)
 		end
 		
 		state_7 : begin
-			d_o = x;
+			d_o = 1;
 		end
 
 	endcase
