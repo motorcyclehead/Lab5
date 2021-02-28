@@ -5,34 +5,10 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"D:/Users/toro0/Spring 2021/CDA 4203/Xilinx files/Lab5/FSM.v" Line 21: &lt;<arg fmt="%s" index="1">go_i</arg>&gt; is not declared.
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Users/subhi/Documents/CDA4203 - System Design/Lab5/Controller.v" Line 88: &lt;<arg fmt="%s" index="1">x</arg>&gt; is not declared.
 </msg>
 
-<msg type="error" file="HDLCompiler" num="53" delta="unknown" >"D:/Users/toro0/Spring 2021/CDA 4203/Xilinx files/Lab5/FSM.v" Line 21: &lt;<arg fmt="%s" index="1">CLK</arg>&gt; is not a port.
-</msg>
-
-<msg type="error" file="HDLCompiler" num="598" delta="unknown" >"D:/Users/toro0/Spring 2021/CDA 4203/Xilinx files/Lab5/FSM.v" Line 21: Module &lt;<arg fmt="%s" index="1">FSM</arg>&gt; ignored due to previous errors.
-</msg>
-
-<msg type="error" file="HDLCompiler" num="598" delta="unknown" >"D:/Users/toro0/Spring 2021/CDA 4203/Xilinx files/Lab5/FSM.v" Line 111: Module &lt;<arg fmt="%s" index="1">dff</arg>&gt; ignored due to previous errors.
-</msg>
-
-<msg type="error" file="HDLCompiler" num="598" delta="unknown" >"D:/Users/toro0/Spring 2021/CDA 4203/Xilinx files/Lab5/FSM.v" Line 133: Module &lt;<arg fmt="%s" index="1">NEQ</arg>&gt; ignored due to previous errors.
-</msg>
-
-<msg type="error" file="HDLCompiler" num="598" delta="unknown" >"D:/Users/toro0/Spring 2021/CDA 4203/Xilinx files/Lab5/FSM.v" Line 143: Module &lt;<arg fmt="%s" index="1">less_than</arg>&gt; ignored due to previous errors.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="98" delta="unknown" >"D:/Users/toro0/Spring 2021/CDA 4203/Xilinx files/Lab5/FSM.v" Line 159: <arg fmt="%s" index="1">mux_out</arg> was previously declared with a range
-</msg>
-
-<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"D:/Users/toro0/Spring 2021/CDA 4203/Xilinx files/Lab5/FSM.v" Line 161: &lt;<arg fmt="%s" index="1">mux_in</arg>&gt; is not declared.
-</msg>
-
-<msg type="error" file="HDLCompiler" num="598" delta="unknown" >"D:/Users/toro0/Spring 2021/CDA 4203/Xilinx files/Lab5/FSM.v" Line 153: Module &lt;<arg fmt="%s" index="1">mux_21_beh</arg>&gt; ignored due to previous errors.
-</msg>
-
-<msg type="error" file="HDLCompiler" num="598" delta="unknown" >"D:/Users/toro0/Spring 2021/CDA 4203/Xilinx files/Lab5/FSM.v" Line 172: Module &lt;<arg fmt="%s" index="1">Subt</arg>&gt; ignored due to previous errors.
+<msg type="error" file="HDLCompiler" num="598" delta="unknown" >"C:/Users/subhi/Documents/CDA4203 - System Design/Lab5/Controller.v" Line 21: Module &lt;<arg fmt="%s" index="1">Controller</arg>&gt; ignored due to previous errors.
 </msg>
 
 </messages>

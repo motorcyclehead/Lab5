@@ -19,9 +19,9 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module FSM(x_i, y_i, go_i, reset, d_o, CLK);
-
+ 
 input [3:0] x_i, y_i;
-input reset;
+input reset, go_i, CLK;
 
 output [3:0] d_o;
 
@@ -39,7 +39,8 @@ wire [3:0] subt1_x_in, subt2_y_in, x_reg_d_reg, x_o, y_o;
 		.y_ld(ctrl_t_reg),
 		.x_sel(ctrl_x_in),
 		.y_sel(ctrl_y_in),
-		.d_o(d_o) 
+		.d_o(d_o),
+		.go_i(go_i)
 		);
 	
 	dff x_reg(
@@ -154,11 +155,9 @@ module mux_21_beh(mux_in0, mux_in1, sel, mux_out);
 
 input sel;
 input [3:0] mux_in0, mux_in1;
-output [3:0] mux_out;
+output reg [3:0] mux_out;
 
-reg mux_out;
-
-always @(sel or mux_in)
+always @(sel)
 
 	if(sel == 1'b0) begin
 		mux_out = mux_in0;

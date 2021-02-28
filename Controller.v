@@ -36,7 +36,6 @@ input CLK;
 output [3:0] d_o;
 output x_ld, y_ld, x_sel, y_sel;
 
-//reg [3:0] x, y;
 reg [3:0] state = state_1;
 
 reg [3:0] d_o;
@@ -85,7 +84,7 @@ always @(negedge CLK)
 		end
 		
 		state_7 : begin
-			d_o = 1;
+			d_o = x;
 		end
 
 	endcase
