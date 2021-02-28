@@ -84,7 +84,7 @@ always @(negedge CLK)
 		end
 		
 		state_7 : begin
-			d_o = x;
+			d_o = 1;
 		end
 
 	endcase
